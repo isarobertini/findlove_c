@@ -28,17 +28,18 @@
   <body>
     <a-scene background="color: #E22727"
     cursor="rayOrigin: mouse"
-         fog="type: exponential; density: 0.20; color: #F50029;"
+         fog="type: exponential; density: 0.1; color: #F50029;"
          animation="property: fog.color; dur: 7000;
                    from:  #F50029; to:  #F50029;
                    loop: indefinite; dir: alternate">
 
-  <a-light type="point" color="#F2032A" intensity="60" position="0 0 0"
+  <a-light type="point"; color="#E22727" intensity="20" scale="5 5 5" position="0 4 0"
            animation="property: light.intensity;
-                      dur: 7000; from: 6; to: 10;
+                      dur: 9000; from: 5; to: 45;
                       dir: alternate; loop: true">
 
   </a-light>
+
 
   <a-assets>
       <a-asset-item id="heart" src="https://cdn.glitch.global/d50892a0-112b-4e19-a8ae-fe90ec4d329c/scene.gltf?v=1647801161727"></a-asset-item>
@@ -47,9 +48,11 @@
     <a-entity position="0 -0.3 -3" gltf-model="#heart"
               scale="4 4 4"
               animation="property: rotation; dur: 10000;
-                         to: 0 360 0; loop: true">
+                         to: 0 360 0; loop: true;">
     </a-entity>
 
+
+<a-plane position="0 2 -5" color="#000000" height="15" width="20" animation="material.opacity" dur="2000" repeat="0"></a-plane>
     <a-text text="font: https://cdn.aframe.io/fonts/SourceCodePro.fnt; align: center; value: Group C" color="#FFFFFF"position="0 2.5 -1.2" scale="0.6 0.6 0.6"></a-text>
 
   <a-text text="font: https://cdn.aframe.io/fonts/SourceCodePro.fnt; align: center; value: Congratulations!
