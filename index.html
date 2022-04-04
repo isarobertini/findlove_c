@@ -8,7 +8,9 @@
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.1/dist/aframe-extras.min.js" ></script>
     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
 <script src="https://rawgit.com/gasolin/aframe-href-component/master/dist/aframe-href-component.min.js"></script>
+
 <!--This script is new-->
+<script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
 <script>
   // component declaration
   AFRAME.registerComponent("mylink", {
@@ -24,18 +26,20 @@
     }
   })
 </script>
+
   </head>
   <body>
-    <a-scene background="color: #E22727"
+
+    <a-scene background="color: black"
     cursor="rayOrigin: mouse"
          fog="type: exponential; density: 0.1; color: #F50029;"
          animation="property: fog.color; dur: 7000;
                    from:  #F50029; to:  #F50029;
                    loop: indefinite; dir: alternate">
 
-  <a-light type="point"; color="#E22727" intensity="20" scale="5 5 5" position="0 4 0"
+  <a-light type="point"; color="#E22727" intensity="20" scale="10 10 10" position="0 4 10"
            animation="property: light.intensity;
-                      dur: 9000; from: 5; to: 45;
+                      dur: 9000; from: 2; to: 45;
                       dir: alternate; loop: true">
 
   </a-light>
