@@ -30,20 +30,19 @@
   </head>
   <body>
 
-    <a-scene background="color: black"
-    cursor="rayOrigin: mouse"
-         fog="type: exponential; density: 0.1; color: #F50029;"
-         animation="property: fog.color; dur: 7000;
-                   from:  #F50029; to:  #F50029;
-                   loop: indefinite; dir: alternate">
+    <a-scene background="color: yellow"
+      cursor="rayOrigin: mouse"
+           fog="type: exponential; density: 0.1; color: #F50029;"
+           animation="property: fog.color; dur: 7000;
+                     from:  #F50029; to:  #F50029;
+                     loop: indefinite; dir: alternate">
 
-  <a-light type="point"; color="#E22727" intensity="20" scale="10 10 10" position="0 4 10"
-           animation="property: light.intensity;
-                      dur: 9000; from: 2; to: 45;
-                      dir: alternate; loop: true">
+    <a-light type="point"; color="#FF8A00" intensity="20" scale="10 10 10" position="0 4 10"
+             animation="property: light.intensity;
+                        dur: 9000; from: 2; to: 45;
+                        dir: alternate; loop: true">
 
-  </a-light>
-
+    </a-light>
 
   <a-assets>
       <a-asset-item id="heart" src="https://cdn.glitch.global/d50892a0-112b-4e19-a8ae-fe90ec4d329c/scene.gltf?v=1647801161727"></a-asset-item>
@@ -57,13 +56,13 @@
 
 
 <a-plane position="0 2 -5" color="#000000" height="15" width="20" animation="material.opacity" dur="2000" repeat="0"></a-plane>
-    <a-text text="font: https://cdn.aframe.io/fonts/SourceCodePro.fnt; align: center; value: Group C" color="#FFFFFF"position="0 2.5 -1.2" scale="0.6 0.6 0.6"></a-text>
+    <a-text text="font: https://cdn.aframe.io/fonts/SourceCodePro.fnt; align: center; value: Group B" color="yellow"position="0 2.5 -1.2" scale="0.6 0.6 0.6"></a-text>
 
   <a-text text="font: https://cdn.aframe.io/fonts/SourceCodePro.fnt; align: center; value: Congratulations!
 
-  You have scanned this QR-code because you want to find love, and have now been assigned to group C.
+  You have scanned this QR-code because you want to find love, and have now been assigned to group B.
 
- If you wish to go on with the process, click on the big find love text in front of the heart." color="#FFFFFF" position="0 1.2 -1.2" scale="0.3 0.3 0.3"></a-text>
+ If you wish to go on with the process, click on the big find love text in front of the spinning heart." color="yellow" position="0 1.2 -1.2" scale="0.3 0.3 0.3"></a-text>
 
-  <a-text text="font: https://cdn.aframe.io/fonts/SourceCodePro.fnt; value: Find love!" color="#FFFFFF" position="-0.3 2 -1" scale="0.5 0.5 0.5"></a-text>
+  <a-text text="font: https://cdn.aframe.io/fonts/SourceCodePro.fnt; value: Find love!" color="yellow" position="-0.3 2 -1" scale="0.5 0.5 0.5"></a-text>
   <a-plane position="-0.1 2 -1" height="0.4" width="0.6" material="opacity: 0" mylink="href: email.html;"></a-plane>

@@ -6,16 +6,16 @@
     margin:auto;
     font-family: -apple-system, Arial, sans-serif;
     font-size: 1rem;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.5;
-    color: #E22727;
+    color: yellow;
     text-align: center;
-    background-color: #fff;
+    background-color: #DE0000;
     padding: 30px;
     padding-right: 30px
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
-    max-width: 80%;
+    max-width: 100%;
 }
 
 .fcf-form-group {
@@ -42,7 +42,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
-    background-color: #fff;
+    background-color: yellow;
     background-clip: padding-box;
     border: 1px solid #E22727;
     outline: none;
@@ -121,19 +121,19 @@ label.fcf-label {
 }
 
 .fcf-btn-primary {
-    color: #fff;
-    background-color: #E22727;
-    border-color: #E22727;
+    color: yellow;
+    background-color: #6C6C6C;
+    border-color: yellow;
 }
 
 .fcf-btn-primary:hover {
-    color: #fff;
-    background-color: #E22727;
-    border-color: #0062cc;
+    color: red;
+    background-color: yellow;
+    border-color: red;
 }
 
 .fcf-btn-primary:focus, .fcf-btn-primary.focus {
-    color: #fff;
+    color: red;
     background-color: #0069d9;
     border-color: #0062cc;
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
